@@ -12,7 +12,7 @@ header{
     border: solid 1px black;
     justify-content: space-between;
 }
-header img{
+header header img{
     width: 15%;
 }
 /* Search bar styles */
@@ -50,7 +50,6 @@ ul{
 }
 li{
     display: flex;
-    justify-content: ;
     font-size:x-large;
     background-color: #F2C6DE;
     border: solid 1px black;
