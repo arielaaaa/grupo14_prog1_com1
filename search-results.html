@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
+    <title>Search</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
     <header>
         <img src="./img/howToFoodLogo.png" alt="How to food logo">
-        <form action="search-results.html" method="get">
+        <form action="./search-results.html" method="get">
             <input type="text" name="search" placeholder="Search How to Food recipes">
             <button type="submit">Search</button>
         </form>
@@ -32,14 +25,12 @@
         </section>
     </header>
     <main>
-        <h1>How to Food</h1>
-        <section class="recipes"></section>
-        <button class="viewMore">View more</button>
+        <h1></h1><!--Searched term-->
+        <section class="recipes"></section><!--Resulting items-->
     </main>
     <footer>
         <p>Ariel Lehrer</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/search-results.js"></script>
 </body>
-
 </html>
