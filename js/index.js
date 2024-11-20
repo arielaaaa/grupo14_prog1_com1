@@ -35,3 +35,4 @@ fetch('https://dummyjson.com/recipes')
     .catch(function (error) {
         console.log(`The error is ${error}`)
     })
+//WHY ONLY 30 LOAD????

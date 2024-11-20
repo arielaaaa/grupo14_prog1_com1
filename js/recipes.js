@@ -16,8 +16,11 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     let categories = ''
     for (let i = 0; i < data.tags.length; ++i){
         categories += `<article>
-                            <p><a href=""> ${data.tags[i]} </a></p>
+                            <p><a href="category.html?tag=${data.tags[i]}"> ${data.tags[i]} </a></p>
                         </article>` //FILL IN THE LINK IS ARTICLE THE RIGHT THING HERE??
     }
     categorySection.innerHTML = categories
 })  
+.catch(function (error) {
+    console.log(`The error is ${error}`)
+})
