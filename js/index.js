@@ -14,8 +14,8 @@ for (let i = 0; i < b; ++i) {
     recipeList += `<article> 
                       <img src='${data.recipes[i].image}' alt='${data.recipes[i].name}'>
                       <p>${data.recipes[i].name}</p>
-                     <p>${data.recipes[i].difficulty}</p>
-                     <a href=''>Deatails</a>                     
+                      <p>${data.recipes[i].difficulty}</p>
+                      <p><a href= 'recipes.html?id=${data.recipes[i].id}'>Details</a></p>             
                    </article>`
 }
 recipes.innerHTML = recipeList

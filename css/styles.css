@@ -1,3 +1,4 @@
+/* General styles */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -5,52 +6,65 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    background-color: rgba(242, 198, 222, 0.2);
+}
+
 /* Header styles*/
-header{
+header {
     display: flex;
     background-color: #C9E4DE;
     border: solid 1px black;
     justify-content: space-between;
 }
-header header img{
+
+header img {
     width: 15%;
 }
+
 /* Search bar styles */
-form{
+form {
     display: flex;
     align-items: center;
     width: 45%;
     justify-content: center;
-   
+
 
 }
-input{
+
+input {
     width: 80%;
     height: 22%;
     border-radius: 10px;
-    padding-left: 30%; /*FIX THIS PROPERLY*/
+    padding-left: 30%;
+    /*FIX THIS PROPERLY*/
 }
-button{
+
+button {
     width: 10%;
     height: 22%;
     border-radius: 10px;
 }
+
 /* Navigator styles */
-.navigator{
+.navigator {
     width: 35%;
     display: flex;
     align-items: center;
 }
-nav{
+
+nav {
     width: 100%;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-evenly;
 }
-li{
+
+li {
     display: flex;
-    font-size:x-large;
+    font-size: x-large;
     background-color: #F2C6DE;
     border: solid 1px black;
     border-radius: 5px;
@@ -61,33 +75,66 @@ li{
     color: black;
 
 }
+
 /* Main page*/
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(242, 198, 222, 0.2);
-    
+    margin: 1% 0 1% 0 ;
 }
-.recipes{
+
+.recipes {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.recipes article{
+
+.recipes article {
     display: inline-block;
     width: 20%;
     margin: 1.5%;
 }
+
 .recipes p {
     color: gray;
     margin: 1%;
 }
-.recipes img{
+
+img {
     width: 100%;
 }
+
+/* Detail styles*/
+.categories {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.categories article {
+    border: red 2px solid;
+    margin: 5px;
+}
+.detail{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2%;
+}
+.detail section{
+    padding: 1%;
+}
+.instruction{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    height: 50vh;
+    justify-content: space-evenly;
+}
+#time {
+    order: 1;
+}
 /* Footer styles */
-footer{
+footer {
     background-color: #C9E4DE;
     border: solid 1px black;
     font-size: x-large;
