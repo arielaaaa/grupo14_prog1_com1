@@ -9,7 +9,12 @@
 body{
     background-color: rgba(242, 198, 222, 0.2);
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0 1% 0 ;
+}
 /* Header styles*/
 header {
     display: flex;
@@ -26,24 +31,26 @@ header img {
 form {
     display: flex;
     align-items: center;
-    width: 45%;
+    /*width: 45%; FOR SEARCH BAR FIX FIX FIX*/
     justify-content: center;
 
 
 }
 
 input {
-    width: 80%;
-    height: 22%;
+   /* width: 80%;
+    height: 22%; FIX FIX */
     border-radius: 10px;
     padding-left: 30%;
     /*FIX THIS PROPERLY*/
+    font-size: medium;
 }
 
 button {
-    width: 10%;
+   /* width: 10%;
     height: 22%;
-    border-radius: 10px;
+    border-radius: 10px;*/
+    font-size: medium;
 }
 
 /* Navigator styles */
@@ -77,12 +84,6 @@ li {
 }
 
 /* Main page*/
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1% 0 1% 0 ;
-}
 
 .recipes {
     display: flex;
@@ -150,7 +151,30 @@ img {
     border: solid black 1px;
     background-color: #C9E4DE;
 }
-
+/* Login styles*/
+.logReg{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.logReg form{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #C9E4DE;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5%;
+    justify-content: space-around;
+}
+.logReg div{
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+  font-size: larger;
+}
+.logReg p{
+    text-align: center;
+}
 /* Footer styles */
 footer {
     background-color: #C9E4DE;

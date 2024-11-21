@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
     <header>
         <img src="./img/howToFoodLogo.png" alt="How to food logo">
-        <form action="./search-results.html" method="get">
+        <form action="search-results.html" method="get">
             <input type="text" name="search" placeholder="Search How to Food recipes">
             <button type="submit">Search</button>
         </form>
@@ -26,27 +24,30 @@
             </nav>
         </section>
     </header>
-    <main>
-        <h1></h1>
-        <div class="detail"> 
-            <section class="instruction">
-                <h2>Instructions:</h2>
-                <p id="time">Cooking time: </p>
-            </section>
-
-            <section> <!-- SHOULD THIS BE AN ARTICLE-->
-                <img id="foodImage" alt="">
-            </section>
-        </div>
-       
-
-        <section class="categories"></section> <!--categories-->
-
+    <main class="logReg">
+        <form action="./index.html" method="get">
+    
+            <h1>Login</h1>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="mail" id="email" placeholder="Enter email" value="" > <!--REQUIRED?????-->
+            </div>
+            <div>
+                <label for="psw">Password:</label>
+                <input type="password" name="psw" id="psw" placeholder="Enter password" value="" > <!--REQUIRED?????-->
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <p><a href="">Don't have an account</a></p><!--ADD LINK-->
+            </div>
+         
+        </form>
     </main>
     <footer>
         <p>Ariel Lehrer</p>
     </footer>
-    <script src="./js/recipes.js"></script>
+    <script src="./js/login.js"></script>
 </body>
-
 </html>
