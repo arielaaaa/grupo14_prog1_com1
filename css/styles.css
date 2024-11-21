@@ -1,22 +1,46 @@
 /* General styles */
+/* CAN I ADD LINK TO THE IMAGE????? */
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     list-style: none;
     text-decoration: none;
+    /*IS IT OK FOR ME TO PUT THE FONT HERE?????*/
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
 }
+
 body{
     background-color: rgba(242, 198, 222, 0.3);
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1% 0 1% 0 ;
 }
+
+a{
+    color: black;
+}
+
+h1{
+    margin: 1%;
+}
+
+input{
+    text-align: center;
+    border: none; 
+    border-radius: 5px;
+    font-size: medium;
+    padding: 3%;
+    border: solid black 1px;
+}
 /* Header styles*/
 header {
+    
     display: flex;
     background-color: #C9E4DE;
     border: solid 1px black;
@@ -27,35 +51,97 @@ header img {
     width: 15%;
 }
 
-/* Search bar styles */
+/* Search, login and register styles */
 form {
     display: flex;
     align-items: center;
-    /*width: 45%; FOR SEARCH BAR FIX FIX FIX*/
-    justify-content: center;
-
-
-}
-
-input {
-   /* width: 80%;
-    height: 22%; FIX FIX */
-    border-radius: 10px;
-    padding-left: 30%;
-    /*FIX THIS PROPERLY*/
-    font-size: medium;
 }
 
 button {
-   /* width: 10%;
-    height: 22%;
-    border-radius: 10px;*/
     font-size: medium;
+    border: none;
+    background-color: #F2C6DE;
+    padding: 1%;
 }
+
+.submitButton{
+    padding: 2%;
+    width: 50%;
+    background-color: #F2C6DE;
+    border: black 1px solid;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.viewMore{/* button */
+   border: black 1px solid;
+   font-size: large;
+   border-radius: 5px;
+}
+/*HOW TO MAKE THE TC TABLE ALIGN*/
 div#tc{
+    width: 90%;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     font-size: small;
+}
+/* Search bar styles */
+.search{
+    justify-content: center;
+    width:45%;
+}
+.search input{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    border: none; /* do to global */
+    border-radius: 5px 0 0 5px;
+    /*FIX THIS PROPERLY*/
+}
+.search button{
+    width: 10%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+.search div{
+    border: black solid 1px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    border-radius: 5px;
+}
+/* Login and register styles*/
+/* WHY DOES REGISTER NOT CENTER???????? */
+.logReg{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.logReg form{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #C9E4DE;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5%;
+    justify-content: space-around;
+}
+
+.logReg div{
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+  font-size: larger;
+}
+.logReg input{
+    margin-top: 8%;
+}
+
+.logReg p{
+    text-align: center;
 }
 /* Navigator styles */
 .navigator {
@@ -75,17 +161,17 @@ ul {
 
 li {
     display: flex;
-    font-size: x-large;
+    justify-content: center;
+    font-size: larger;
     background-color: #F2C6DE;
     border: solid 1px black;
     border-radius: 5px;
-    padding: 1%;
+    padding: 2%;
     width: 20%;
     font-family: "League Spartan", sans-serif;
     font-weight: 400;
-    color: black;
-
 }
+
 
 /* Main page*/
 
@@ -103,8 +189,11 @@ li {
 }
 
 .recipes p {
-    color: gray;
+    color: darkgray;;
     margin: 1%;
+}
+.recipes a{
+    color: gray;
 }
 
 img {
@@ -115,11 +204,16 @@ img {
 .categories {
     display: flex;
     flex-flow: row wrap;
+    width: 50%;
+    justify-content: center;
 }
 
 .categories article {
-    border: red 2px solid;
-    margin: 5px;
+    border: black 1px solid;
+    padding: 5px;
+    background-color: #F2C6DE;
+    border-radius: 5px;
+    margin: 0 1% 0 1%;
 }
 .detail{
     display: flex;
@@ -152,37 +246,15 @@ img {
     font-size: xx-large;
     margin: 1%;
     padding: 1%;
-    border: solid black 1px;
-    background-color: #C9E4DE;
-}
-/* Login and register styles*/
-/* WHY DOES REGISTER NOT CENTER???????? */
-.logReg{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-.logReg form{
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: #C9E4DE;
-    border: solid black 1px;
     border-radius: 5px;
-    padding: 5%;
-    justify-content: space-around;
+    border: solid black 1px;
+    background-color: #C9E4DE;
 }
-.logReg div{
-  display: flex;
-  flex-direction: column;
-  margin: 10%;
-  font-size: larger;
-}
-.logReg p{
-    text-align: center;
-}
+
 /* Footer styles */
 footer {
     background-color: #C9E4DE;
     border: solid 1px black;
     font-size: x-large;
+    padding: 1%;
 }
