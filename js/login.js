@@ -10,7 +10,7 @@ form.addEventListener('submit', function (event) {
         this.submit()
     }
 })
-//Checks email for contents
+//Checks email and password for contents
 //NOT WORKING FIX FIX FIX
 const login = document.querySelector('.logReg form')
 const email = document.querySelector('#email')

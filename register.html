@@ -1,9 +1,9 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -25,22 +25,27 @@
         </section>
     </header>
     <main class="logReg">
-        <form action="./index.html" method="get">
+        <form action="./login.html" method="get">
     
-            <h1>Login</h1>
+            <h1>Register</h1>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="mail" id="email" placeholder="Enter email" value="" > <!--REQUIRED?????-->
+                <input type="email" name="mail" id="email" placeholder="Enter email" value="" required> 
             </div>
             <div>
                 <label for="psw">Password:</label>
-                <input type="password" name="psw" id="psw" placeholder="Enter password" value="" > <!--REQUIRED?????-->
+                <input type="password" name="psw" id="psw" placeholder="Enter password" value="" required> 
             </div>
-            <div>
+    
+            <div id="tc">
+                <input type="checkbox" id="tc" name="tc" value="accepttc">
+                <label for="tc">Accept terms and conditions</label>
+            </div>
+                <div>
                 <button type="submit">Submit</button>
             </div>
             <div>
-                <p><a href="./register.html">Don't have an account</a></p><!--ADD LINK-->
+                <p><a href="./login.html">Already have an account</a></p><!--ADD LINK-->
             </div>
          
         </form>
@@ -48,6 +53,6 @@
     <footer>
         <p>Ariel Lehrer</p>
     </footer>
-    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
 </body>
 </html>

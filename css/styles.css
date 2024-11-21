@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 body{
-    background-color: rgba(242, 198, 222, 0.2);
+    background-color: rgba(242, 198, 222, 0.3);
 }
 main {
     display: flex;
@@ -52,7 +52,11 @@ button {
     border-radius: 10px;*/
     font-size: medium;
 }
-
+div#tc{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
 /* Navigator styles */
 .navigator {
     width: 35%;
@@ -151,7 +155,8 @@ img {
     border: solid black 1px;
     background-color: #C9E4DE;
 }
-/* Login styles*/
+/* Login and register styles*/
+/* WHY DOES REGISTER NOT CENTER???????? */
 .logReg{
     display: flex;
     justify-content: center;
