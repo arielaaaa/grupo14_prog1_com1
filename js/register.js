@@ -6,7 +6,7 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     if (input.value == '' || input.value.length < 3) {
         alert('Search must contain atleast 3 characters')
-    }else{
+    } else {
         this.submit()
     }
 })

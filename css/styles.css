@@ -1,5 +1,8 @@
 /* General styles */
 /* CAN I ADD LINK TO THE IMAGE????? */
+/* HOW FUNCTIONAL HAMBURGER MENU ?????? */
+/* HOW TO FIX ALL THE TEXT ????? */
+/* COMPACT THE CSS PLEASE FIX FIX FIX */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -11,7 +14,7 @@
     font-weight: 400;
 }
 
-body{
+body {
     background-color: rgba(242, 198, 222, 0.3);
 }
 
@@ -19,28 +22,29 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1% 0 1% 0 ;
+    margin: 1% 0 1% 0;
 }
 
-a{
+a {
     color: black;
 }
 
-h1{
+h1 {
     margin: 1%;
 }
 
-input{
+input {
     text-align: center;
-    border: none; 
+    border: none;
     border-radius: 5px;
-    font-size: medium;
+    font-size: 100%;
     padding: 3%;
     border: solid black 1px;
 }
+
 /* Header styles*/
 header {
-    
+
     display: flex;
     background-color: #C9E4DE;
     border: solid 1px black;
@@ -64,7 +68,7 @@ button {
     padding: 1%;
 }
 
-.submitButton{
+.submitButton {
     padding: 2%;
     width: 50%;
     background-color: #F2C6DE;
@@ -73,38 +77,45 @@ button {
     border-radius: 5px;
 }
 
-.viewMore{/* button */
-   border: black 1px solid;
-   font-size: large;
-   border-radius: 5px;
+.viewMore {
+    /* button */
+    border: black 1px solid;
+    font-size: large;
+    border-radius: 5px;
 }
+
 /*HOW TO MAKE THE TC TABLE ALIGN*/
-div#tc{
+div#tc {
     width: 90%;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     font-size: small;
 }
+
 /* Search bar styles */
-.search{
+.search {
     justify-content: center;
-    width:45%;
+    width: 45%;
 }
-.search input{
+
+.search input {
     width: 90%;
     height: 100%;
     text-align: center;
-    border: none; /* do to global */
+    border: none;
+    /* do to global */
     border-radius: 5px 0 0 5px;
     /*FIX THIS PROPERLY*/
 }
-.search button{
+
+.search button {
     width: 10%;
     height: 100%;
     border-radius: 0 5px 5px 0;
 }
-.search div{
+
+.search div {
     border: black solid 1px;
     width: 90%;
     display: flex;
@@ -112,15 +123,16 @@ div#tc{
     height: 20%;
     border-radius: 5px;
 }
+
 /* Login and register styles*/
 /* WHY DOES REGISTER NOT CENTER???????? */
-.logReg{
+.logReg {
     display: flex;
     justify-content: center;
     height: 100%;
 }
 
-.logReg form{
+.logReg form {
     display: flex;
     flex-flow: column nowrap;
     background-color: #C9E4DE;
@@ -130,19 +142,21 @@ div#tc{
     justify-content: space-around;
 }
 
-.logReg div{
-  display: flex;
-  flex-direction: column;
-  margin: 10%;
-  font-size: larger;
+.logReg div {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    font-size: larger;
 }
-.logReg input{
+
+.logReg input {
     margin-top: 8%;
 }
 
-.logReg p{
+.logReg p {
     text-align: center;
 }
+
 /* Navigator styles */
 .navigator {
     width: 35%;
@@ -189,10 +203,12 @@ li {
 }
 
 .recipes p {
-    color: darkgray;;
+    color: darkgray;
+    ;
     margin: 1%;
 }
-.recipes a{
+
+.recipes a {
     color: gray;
 }
 
@@ -213,34 +229,40 @@ img {
     padding: 5px;
     background-color: #F2C6DE;
     border-radius: 5px;
-    margin: 0 1% 0 1%;
+    margin: 0 1% 1% 1%;
 }
-.detail{
+
+.detail {
     display: flex;
     flex-direction: row-reverse;
     margin: 2%;
 }
-.detail section{
+
+.detail section {
     padding: 1%;
 }
-.instruction{
+
+.instruction {
     display: flex;
     flex-flow: column;
     width: 50%;
     height: 50vh;
     justify-content: space-evenly;
 }
+
 #time {
     order: 1;
 }
+
 /* Category page styles */
-.categoryPage{
+.categoryPage {
     display: flex;
     flex-flow: row wrap;
     width: 80%;
     justify-content: center;
 }
-.categoryPage article{
+
+.categoryPage article {
     width: 30%;
     text-align: center;
     font-size: xx-large;
@@ -257,4 +279,46 @@ footer {
     border: solid 1px black;
     font-size: x-large;
     padding: 1%;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+}
+
+/* Responsive for tablet */
+@media (max-width: 768px) {
+    .recipes article {
+        width: 40%;
+    }
+
+    .navigator {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    .hamburger img {
+        width: 70%;
+    }
+
+    .categoryPage article {
+        width: 45%;
+    }
+}
+
+/* Responsive mobile */
+@media (max-width: 420px) {
+    .recipes article {
+        width: 80%;
+    }
+
+    .categoryPage article {
+        width: 85%;
+    }
 }

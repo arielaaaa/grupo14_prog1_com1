@@ -6,7 +6,7 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     if (input.value == '' || input.value.length < 3) {
         alert('Search must contain atleast 3 characters')
-    }else{
+    } else {
         this.submit()
     }
 })
@@ -19,9 +19,9 @@ login.addEventListener('submit', function (event) {
     event.preventDefault();
     if (email.value == '') {
         alert('Email must be filled in')
-    }else if(psw.value == ''){//There will only be one alert at a time, if there is neither an email or password it will only alert about the missing email.
+    } else if (psw.value == '') {//There will only be one alert at a time, if there is neither an email or password it will only alert about the missing email.
         alert('Password must be filled in')
-    }else{
+    } else {
         this.submit()
     }
 })
