@@ -1,36 +1,35 @@
 /* General styles */
-/* CAN I ADD LINK TO THE IMAGE????? */
-/* HOW FUNCTIONAL HAMBURGER MENU ?????? */
-/* HOW TO FIX ALL THE TEXT ????? */
+/* ONLY 30 RECIPES API OR ME???? */
 /* COMPACT THE CSS PLEASE FIX FIX FIX */
 * {
     box-sizing: border-box;
     margin: 0%;
-    padding: 0%;
-    list-style: none;
-    text-decoration: none;
-    /*IS IT OK FOR ME TO PUT THE FONT HERE?????*/
-    font-family: "League Spartan", sans-serif;
-    font-weight: 400;
+    padding: 0%; 
 }
 
 body {
     background-color: rgba(242, 198, 222, 0.3);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;  
+
 }
 
 main {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1% 0 1% 0;
+    margin: 1% 0;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 h1 {
     margin: 1%;
+    font-weight: 400; 
 }
 
 input {
@@ -84,7 +83,6 @@ button {
     border-radius: 5px;
 }
 
-/*HOW TO MAKE THE TC TABLE ALIGN*/
 div#tc {
     width: 90%;
     justify-content: space-between;
@@ -110,7 +108,6 @@ div#tc {
 }
 
 .search button {
-    width: 10%;
     height: 100%;
     border-radius: 0 5px 5px 0;
 }
@@ -120,16 +117,16 @@ div#tc {
     width: 90%;
     display: flex;
     justify-content: center;
-    height: 20%;
+    height: 30%;
     border-radius: 5px;
 }
 
 /* Login and register styles*/
-/* WHY DOES REGISTER NOT CENTER???????? */
+/* WHY DOES REGISTER NOT CENTER???????? VIEWPORT HEIGHT */
 .logReg {
     display: flex;
     justify-content: center;
-    height: 100%;
+    /*height: 100vh;*/
 }
 
 .logReg form {
@@ -171,12 +168,13 @@ nav {
 ul {
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 li {
     display: flex;
     justify-content: center;
-    font-size: larger;
+    font-size: small;
     background-color: #F2C6DE;
     border: solid 1px black;
     border-radius: 5px;
@@ -235,6 +233,7 @@ img {
 .detail {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     margin: 2%;
 }
 
@@ -310,6 +309,7 @@ footer {
     .categoryPage article {
         width: 45%;
     }
+    
 }
 
 /* Responsive mobile */
@@ -317,8 +317,24 @@ footer {
     .recipes article {
         width: 80%;
     }
+    .search{
+        width: 60%;
+    }
+    .search button{
+        font-size: x-small;
+    }
+    .search div{
+        height: 40%;
+        font-size: x-small;
+    }
 
     .categoryPage article {
         width: 85%;
+    }
+    .detail section{
+        font-size: small;
+    }
+    .detail h1{
+        font-size: larger;
     }
 }

@@ -27,7 +27,9 @@ fetch(`https://dummyjson.com/recipes/search?q=${userSearch}`)
             let recipes = '';
             for (let i = 0; i < data.recipes.length; i++) {
                 recipes += `<article> 
+                            <a href= 'recipes.html?id=${data.recipes[i].id}'>
                             <img src='${data.recipes[i].image}' alt='${data.recipes[i].name}'>
+                            </a>
                             <p>${data.recipes[i].name}</p>
                             <p><a href= 'recipes.html?id=${data.recipes[i].id}'>Details</a></p>            
                         </article>`
