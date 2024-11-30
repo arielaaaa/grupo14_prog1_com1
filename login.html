@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <img src="./img/howToFoodLogo.png" alt="How to food logo"> 
+        <img src="./img/howToFoodLogo.png" alt="How to food logo">
         <form action="search-results.html" method="get" class="search">
             <div>
-                <input type="text" name="search" placeholder="Search How to Food recipes">
+                <input type="text" name="search" value="" placeholder="Search How to Food recipes">
                 <button type="submit">Search</button>
             </div>
         </form>
@@ -42,17 +42,19 @@
             <h1>Login</h1>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="mail" id="email" placeholder="Enter email" value=""> <!--REQUIRED?????-->
+                <input type="email" name="mail" id="email" placeholder="Enter email" value="">
+                <!--Required not utilised since it is necesary for it to go through so the js can show the alert-->
             </div>
             <div>
                 <label for="psw">Password:</label>
-                <input type="password" name="psw" id="psw" placeholder="Enter password" value=""> <!--REQUIRED?????-->
+                <input type="password" name="psw" id="psw" placeholder="Enter password" value="">
+                <!--Required not utilised since it is necesary for it to go through so the js can show the alert-->
             </div>
             <div class="submitButton">
                 <button type="submit">Submit</button>
             </div>
             <div>
-                <p><a href="./register.html">Don't have an account</a></p><!--ADD LINK-->
+                <p><a href="./register.html">Don't have an account</a></p>
             </div>
 
         </form>

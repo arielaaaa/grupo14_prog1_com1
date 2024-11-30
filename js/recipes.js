@@ -29,7 +29,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         for (let i = 0; i < data.tags.length; ++i) {
             categories += `<article>
                             <p><a href="category.html?tag=${data.tags[i]}"> ${data.tags[i]} </a></p>
-                        </article>` //FILL IN THE LINK IS ARTICLE THE RIGHT THING HERE??
+                        </article>`
         }
         categorySection.innerHTML = categories
     })

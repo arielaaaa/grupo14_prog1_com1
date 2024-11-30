@@ -1,16 +1,14 @@
 /* General styles */
-/* ONLY 30 RECIPES API OR ME???? */
-/* COMPACT THE CSS PLEASE FIX FIX FIX */
 * {
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%; 
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: rgba(242, 198, 222, 0.3);
     font-family: "League Spartan", sans-serif;
-    font-weight: 400;  
+    font-weight: 400;
 
 }
 
@@ -29,12 +27,11 @@ a {
 
 h1 {
     margin: 1%;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 input {
     text-align: center;
-    border: none;
     border-radius: 5px;
     font-size: 100%;
     padding: 3%;
@@ -60,34 +57,25 @@ form {
     align-items: center;
 }
 
+/*DEAL WITH REPETITIVE BUTTON STYLES*/
 button {
-    font-size: medium;
-    border: none;
+
     background-color: #F2C6DE;
     padding: 1%;
+    height: 100%;
+    border: black 1px solid;
+    font-size: large;
+    border-radius: 5px;
 }
 
 .submitButton {
     padding: 2%;
     width: 50%;
-    background-color: #F2C6DE;
-    border: black 1px solid;
-    font-size: large;
-    border-radius: 5px;
-}
 
-.viewMore {
-    /* button */
-    border: black 1px solid;
-    font-size: large;
-    border-radius: 5px;
 }
 
 div#tc {
     width: 90%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
     font-size: small;
 }
 
@@ -100,17 +88,10 @@ div#tc {
 .search input {
     width: 90%;
     height: 100%;
-    text-align: center;
-    border: none;
-    /* do to global */
     border-radius: 5px 0 0 5px;
-    /*FIX THIS PROPERLY*/
+    border: none;
 }
 
-.search button {
-    height: 100%;
-    border-radius: 0 5px 5px 0;
-}
 
 .search div {
     border: black solid 1px;
@@ -121,12 +102,16 @@ div#tc {
     border-radius: 5px;
 }
 
+.search button {
+    border-radius: 0 5px 5px 0;
+    font-size: medium;
+    border: none;
+}
+
 /* Login and register styles*/
-/* WHY DOES REGISTER NOT CENTER???????? VIEWPORT HEIGHT */
 .logReg {
     display: flex;
     justify-content: center;
-    /*height: 100vh;*/
 }
 
 .logReg form {
@@ -152,6 +137,9 @@ div#tc {
 
 .logReg p {
     text-align: center;
+}
+.valid{
+    color: red;
 }
 
 /* Navigator styles */
@@ -309,7 +297,7 @@ footer {
     .categoryPage article {
         width: 45%;
     }
-    
+
 }
 
 /* Responsive mobile */
@@ -317,13 +305,16 @@ footer {
     .recipes article {
         width: 80%;
     }
-    .search{
+
+    .search {
         width: 60%;
     }
-    .search button{
+
+    .search button {
         font-size: x-small;
     }
-    .search div{
+
+    .search div {
         height: 40%;
         font-size: x-small;
     }
@@ -331,10 +322,12 @@ footer {
     .categoryPage article {
         width: 85%;
     }
-    .detail section{
+
+    .detail section {
         font-size: small;
     }
-    .detail h1{
+
+    .detail h1 {
         font-size: larger;
     }
 }

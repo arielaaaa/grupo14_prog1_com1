@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <img src="./img/howToFoodLogo.png" alt="How to food logo"> 
+        <img src="./img/howToFoodLogo.png" alt="How to food logo">
         <form action="search-results.html" method="get" class="search">
             <div>
-                <input type="text" name="search" placeholder="Search How to Food recipes">
+                <input type="text" name="search" value="" placeholder="Search How to Food recipes">
                 <button type="submit">Search</button>
             </div>
         </form>
@@ -42,15 +42,16 @@
             <h1>Register</h1>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="mail" id="email" placeholder="Enter email" value="" required>
+                <input type="email" name="mail" id="email" placeholder="Enter email" value="">
             </div>
+            <p class="validemail valid"></p>
             <div>
                 <label for="psw">Password:</label>
-                <input type="password" name="psw" id="psw" placeholder="Enter password" value="" required>
+                <input type="password" name="psw" id="psw" placeholder="Enter password" value="">
             </div>
-
+            <p class="validpsw valid"></p>
             <div id="tc">
-        
+
                 <label for="tc">
                     <input type="checkbox" id="tc" name="tc" value="accepttc">
                     Accept terms and conditions</label>
@@ -59,7 +60,7 @@
                 <button type="submit">Submit</button>
             </div>
             <div>
-                <p><a href="./login.html">Already have an account</a></p><!--ADD LINK-->
+                <p><a href="./login.html">Already have an account</a></p>
             </div>
 
         </form>

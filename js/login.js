@@ -1,5 +1,4 @@
-// Checks the searchbar has more than 3 characters
-//IS THERE AWAY AROUND HAVING THE SAME THING ON EVERY JS FOR THE SEARCH BAR??????   
+// Checks the searchbar has more than 3 characters  
 const form = document.querySelector('form')
 const input = document.querySelector('input')
 form.addEventListener('submit', function (event) {
@@ -10,8 +9,8 @@ form.addEventListener('submit', function (event) {
         this.submit()
     }
 })
+
 //Checks email and password for contents
-//NOT WORKING FIX FIX FIX
 const login = document.querySelector('.logReg form')
 const email = document.querySelector('#email')
 const psw = document.querySelector('#psw')
